@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>Mi App</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <servlet>
+    <description></description>
+    <display-name>ServletDeLogeo</display-name>
+    <servlet-name>ServletDeLogeo</servlet-name>
+    <servlet-class>com.tccorp.Lttshop.controllers.ServletDeLogeo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDeLogeo</servlet-name>
+    <url-pattern>/logeo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServlerLogOut</display-name>
+    <servlet-name>ServlerLogOut</servlet-name>
+    <servlet-class>com.tccorp.Lttshop.controllers.ServlerLogOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServlerLogOut</servlet-name>
+    <url-pattern>/salidaLogOut</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>llamaVenta</display-name>
+    <servlet-name>llamaVenta</servlet-name>
+    <servlet-class>com.tccorp.Lttshop.controllers.llamaVenta</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>llamaVenta</servlet-name>
+    <url-pattern>/llamaVenta</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>llenarGuardar</display-name>
+    <servlet-name>llenarGuardar</servlet-name>
+    <servlet-class>com.tccorp.Lttshop.controllers.llenarGuardar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>llenarGuardar</servlet-name>
+    <url-pattern>/llenarGuardar</url-pattern>
+  </servlet-mapping>
+</web-app>
